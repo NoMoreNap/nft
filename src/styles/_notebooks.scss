@@ -1,0 +1,87 @@
+@media screen and (max-width: 1440px) {
+    .center {
+        padding-right: 50px;
+    }
+
+    // .wrapper {
+    //     background: #fff;
+    // }
+    .main {
+        gap: 150px;
+    }
+
+    .content {
+        &_textarea {
+            max-width: 600px;
+
+            &-text {
+                font-size: 50px;
+
+                &+& {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &_pic {
+            right: -65%;
+            max-width: 600px;
+            max-height: 495px;
+        }
+    }
+
+    .nav {
+        &_list {
+            &-text {
+                font-size: 20px;
+            }
+        }
+    }
+
+    // second block 
+
+    .info {
+        max-width: 1000px;
+        max-height: calc(700px - (55px + 10px));
+
+        &_title {
+            font-size: 35px;
+        }
+
+        &_content {
+            padding: 50px 170px;
+            z-index: 1;
+        }
+
+        &_cards {
+            grid-row-gap: 30px;
+            grid-column-gap: 25px;
+            justify-items: center;
+
+            &-upper {
+                width: 210px;
+                height: 215px;
+            }
+
+            &-overlay {
+                width: 190px;
+                height: 180px;
+                transform: translate(-50%, 52px);
+            }
+
+            &-img {
+                width: 70px;
+                height: 70px;
+
+                &::before {
+                    width: 58px;
+                    height: 58px;
+                }
+            }
+
+            &-text {
+                font-size: 13px;
+            }
+        }
+    }
+}
